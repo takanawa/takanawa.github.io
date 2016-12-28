@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server \"./public/\" --files \"./public/**/*\" --startPath \"index.html\"",
-    "sass": "node-sass --watch ./source/sass/ --include-path ./node_modules/ress --output ./public/css/",
-    "sass:build": "node-sass ./source/sass/ --include-path ./node_modules/ress --output-style compressed --output ./public/css/"
+    "start": "browser-sync start --server \"./dist/\" --files \"./dist/**/*\" --startPath \"index.html\"",
+    "sass": "node-sass --watch ./source/sass/ --include-path ./node_modules/ress --output ./dist/css/",
+    "sass:build": "node-sass ./source/sass/ --include-path ./node_modules/ress --output-style compressed --output ./dist/css/"
   },
   "repository": {
     "type": "git",
