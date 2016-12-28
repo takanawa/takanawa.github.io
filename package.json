@@ -1,0 +1,23 @@
+{
+  "name": "takanawa.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server \"./public/\" --files \"./public/**/*\" --startPath \"index.html\"",
+    "sass": "node-sass --watch ./source/sass/ --include-path ./node_modules/ress --output ./public/css/",
+    "sass:build": "node-sass ./source/sass/ --include-path ./node_modules/ress --output-style compressed --output ./public/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com.nutsu:takanawa/takanawa.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ress": "^1.1.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.1.1"
+  }
+}

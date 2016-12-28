@@ -1,0 +1,43 @@
+
+$spmode: "screen and (max-width: 619px)"
+
+
+%fit-imageg
+	display: block
+	width: 100%
+	height: auto
+
+	&.fit-imageg--none
+		display: inline-block
+		width: auto
+
+
+@mixin floating()
+	position: absolute
+	margin:auto
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+
+@mixin hideText()
+	text-indent: 110%
+	white-space: nowrap
+	overflow: hidden
+	font-size: 0
+	
+	.txt-in
+		display: none
+
+@mixin translate3d( $x, $y, $z )
+	-webkit-transform: translate3d($x, $y, $z)
+	-moz-transform: translate3d($x, $y, $z)
+	-ms-transform: translate3d($x, $y, $z)
+	-o-transform: translate3d($x, $y, $z)
+	transform: translate3d($x, $y, $z)
+
+@mixin box-shadow( $shadow )
+	box-shadow: $shadow
+	-moz-box-shadow: $shadow
+	-webkit-box-shadow: $shadow
+
